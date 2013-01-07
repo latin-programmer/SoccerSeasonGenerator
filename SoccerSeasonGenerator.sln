@@ -5,7 +5,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoccerSeasonGenerator", "So
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soccer", "Soccer\Soccer.csproj", "{68B8776A-4A2E-490C-9917-1B78FDC10CF2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Unit", "Tests.Unit\Tests.Unit.csproj", "{F3318A8E-3306-415F-BCC3-5222D8788B02}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EBA5E72D-26AD-4B56-95AD-767C57471DFD}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		SoccerSeasonGenerator.vsmdi = SoccerSeasonGenerator.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = SoccerSeasonGenerator.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -35,6 +47,16 @@ Global
 		{68B8776A-4A2E-490C-9917-1B78FDC10CF2}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{68B8776A-4A2E-490C-9917-1B78FDC10CF2}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{68B8776A-4A2E-490C-9917-1B78FDC10CF2}.Release|x86.ActiveCfg = Release|Any CPU
+		{F3318A8E-3306-415F-BCC3-5222D8788B02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3318A8E-3306-415F-BCC3-5222D8788B02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3318A8E-3306-415F-BCC3-5222D8788B02}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F3318A8E-3306-415F-BCC3-5222D8788B02}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F3318A8E-3306-415F-BCC3-5222D8788B02}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F3318A8E-3306-415F-BCC3-5222D8788B02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3318A8E-3306-415F-BCC3-5222D8788B02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3318A8E-3306-415F-BCC3-5222D8788B02}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F3318A8E-3306-415F-BCC3-5222D8788B02}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F3318A8E-3306-415F-BCC3-5222D8788B02}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
