@@ -15,10 +15,15 @@ namespace Soccer
             Matches = new List<SoccerMatch>();
 
             foreach (var team in from teamName in teams
-                                 let teamCoach = new Coach {FirstName = "Mister", LastName = teamName.Split()[0]}
-                                 select new Team() {TeamName = teamName, Coach = teamCoach})
+                                 let teamCoach = new Coach { FirstName = "Mister", LastName = teamName.Split()[0] }
+                                 select new Team() { TeamName = teamName, Coach = teamCoach })
             {
                 Teams.Add(team);
+            }
+
+            if (Teams.Count < 2)
+            {
+                throw new InvalidOperationException("You should have some teams");
             }
 
             var ref1 = new Referee { FirstName = "Joe", LastName = "Strict" };
@@ -27,6 +32,7 @@ namespace Soccer
             Referees.Add(ref1);
             Referees.Add(ref2);
             _RandomGenerator = new Random();
+
         }
 
         public IList<Team> Teams { get; set; }

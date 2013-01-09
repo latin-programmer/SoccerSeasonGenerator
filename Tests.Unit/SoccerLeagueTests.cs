@@ -2,6 +2,7 @@
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Soccer;
+using System;
 
 namespace Tests.Unit
 {
@@ -53,6 +54,20 @@ namespace Tests.Unit
 
             //assert
             Assert.IsTrue(soccerLeague.Matches != null, "Expected matches to be initialized and they were not.");
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void TestConstructorWithNoTeamsThrowsInvalidOperationException()
+        {
+            //arrange
+            var teams = new List<string>();
+
+            //act
+            var soccerLeague = new SoccerLeague(teams);
+
+            //assert
+            //should throw invalid operation exception here
         }
     }
 }
